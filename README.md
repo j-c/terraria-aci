@@ -1,5 +1,3 @@
-# 2020-05-19: This doesn't work on ACI yet!
-
 # Why fork?
 
 All the docker images that I found required a detatched tty (i.e.: `-dit`) otherwise the Terraria server would crash on startup. This fork is to house images that can be run under Azure Container Instances (ACI) does not offer the ability to run with `-dit`
