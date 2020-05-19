@@ -42,6 +42,7 @@ Docker Images are avaiable on [Docker Hub](https://hub.docker.com/repository/doc
 A Terraria server provides a platform for players to connect over the internet or other network for multiplayer games of [Terraria](https://terraria.org/).
 
 ## How to use
+Please refer to https://github.com/beardedio/terraria for docker usage instructions.
 
 ### Generating a new world (Docker)
 To run with out user intervention Terraria Server needs to be configure to use an already generated world. This means you can use one that you have already generated or you can generate one via docker by running this command:
