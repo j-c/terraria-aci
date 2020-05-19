@@ -3,7 +3,7 @@ FROM mono
 # Update and install a zip utility
 RUN apt-get update && \
     apt-get upgrade -y && \
-    apt-get install -y vim zip && \
+    apt-get install -y zip tmux procps locales-all && \
     apt-get clean
 
 # fix for favorites.json error
@@ -23,11 +23,13 @@ RUN mkdir /tmp/terraria && \
     if [ ! -f /vanilla/TerrariaServer ]; then echo "Missing /vanilla/TerrariaServer"; exit 1; fi
 
 COPY run-vanilla.sh /vanilla/run.sh
+COPY run-tmux.sh /vanilla/run-tmux.sh
+RUN chmod +x /vanilla/run.sh
 
 # Commit Hash Metadata
 ARG VCS_REF
 LABEL org.label-schema.vcs-ref=$VCS_REF \
-    org.label-schema.vcs-url="https://github.com/beardedio/terraria"
+    org.label-schema.vcs-url="https://github.com/j-c/terraria-aci"
 
 # Allow for external data
 VOLUME ["/config"]
