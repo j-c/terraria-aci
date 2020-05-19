@@ -36,4 +36,4 @@ VOLUME ["/config"]
 
 # Run the server
 WORKDIR /vanilla
-CMD ["./run.sh"]
+CMD ["./run-tmux.sh"]
