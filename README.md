@@ -2,11 +2,11 @@
 
 All the docker images that I found required a detatched tty (i.e.: `-dit`) otherwise the Terraria server would crash on startup. This fork is to house images that can be run under Azure Container Instances (ACI) does not offer the ability to run with `-dit`
 
-Instructions are based off https://terraria.gamepedia.com/Server#How_to_.28Linux.29
+Changes are based off https://terraria.gamepedia.com/Server#How_to_.28Linux.29
 
 # terraria
 
-Docker images to run a Terraria Server. Images with [TShock Server](https://github.com/Pryaxis/TShock) or [Vanilla Server](https://terraria.gamepedia.com/Server) are available.
+Docker images to run a [Terraria] Server on ACI.
 
 ### Usage
 #### Azure Container Instances
@@ -90,3 +90,5 @@ Now you can execute any commands to the terraria server. Ctrl-p Ctrl-q will deta
 #### License
 
 The MIT License (MIT)
+
+[Terraria]: https://terraria.org/
