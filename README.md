@@ -89,4 +89,3 @@ Now you can execute any commands to the terraria server. Ctrl-p Ctrl-q will deta
 #### License
 
 The MIT License (MIT)
-Copyright (c) 2020 Brandon Skrtich
