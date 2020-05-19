@@ -23,7 +23,7 @@ az container create `
     --azure-file-volume-account-name <azure_storage_account> `
     --azure-file-volume-account-key <azure_storage_account_name> `
     --azure-file-volume-share-name <azure_storage_account_share_name> `
-    --azure-file-volume-mount-path /world
+    --azure-file-volume-mount-path /config
 ```
 Please refer to the Azure documentation for [instructions on how to mount a persistent volume in ACI](https://docs.microsoft.com/en-us/azure/container-instances/container-instances-volume-azure-files).
 
