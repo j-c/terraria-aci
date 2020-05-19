@@ -22,4 +22,3 @@ if [ "${world:-null}" != null ]; then
 fi
 
 exec $CMD $@
-
