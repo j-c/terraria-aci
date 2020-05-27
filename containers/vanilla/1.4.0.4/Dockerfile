@@ -24,7 +24,7 @@ RUN mkdir /tmp/terraria && \
 
 COPY run-vanilla.sh /vanilla/run.sh
 COPY run-tmux.sh /vanilla/run-tmux.sh
-RUN chmod +x /vanilla/run.sh
+RUN chmod +x /vanilla/run.sh /vanilla/run-tmux.sh
 
 # Commit Hash Metadata
 ARG VCS_REF
